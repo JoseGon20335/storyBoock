@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Operaciones from './component/operaciones';
 
 const App = () => {
 
@@ -50,7 +51,7 @@ const App = () => {
             name="button-clear"
             className="calculator__keypad-row-button primary-button"
             value="C"
-            onClick={clearCalculator()}
+            onClick={Operaciones.call.}
           />
           <input
             type="button"
@@ -79,29 +80,25 @@ const App = () => {
             type="button"
             name="button-seven"
             className="calculator__keypad-row-button"
-            value="7"
-            onClick={addToCalculator(value)}
+            onClick={addToCalculator("7")}
           />
           <input
             type="button"
             name="button-eight"
             className="calculator__keypad-row-button"
-            value="8"
-            onClick={addToCalculator(value)}
+            onClick={addToCalculator("8")}
           />
           <input
             type="button"
             name="button-nine"
             className="calculator__keypad-row-button"
-            value="9"
-            onClick={addToCalculator(value)}
+            onClick={addToCalculator("9")}
           />
           <input
             type="button"
             name="button-plus"
             className="calculator__keypad-row-button"
-            value="+"
-            onClick={addToCalculator(value)}
+            onClick={addToCalculator("+")}
           />
         </div>
         <div className="calculator__keypad-row">
@@ -109,29 +106,25 @@ const App = () => {
             type="button"
             name="button-four"
             className="calculator__keypad-row-button"
-            value="4"
-            onClick={addToCalculator(value)}
+            onClick={addToCalculator("4")}
           />
           <input
             type="button"
             name="button-five"
             className="calculator__keypad-row-button"
-            value="5"
-            onClick={addToCalculator(value)}
+            onClick={addToCalculator("5")}
           />
           <input
             type="button"
             name="button-six"
             className="calculator__keypad-row-button"
-            value="6"
-            onClick={addToCalculator(value)}
+            onClick={addToCalculator("6")}
           />
           <input
             type="button"
             name="button-subtract"
             className="calculator__keypad-row-button"
-            value="-"
-            onClick={addToCalculator(value)}
+            onClick={addToCalculator("-")}
           />
         </div>
         <div className="calculator__keypad-row">
@@ -139,29 +132,25 @@ const App = () => {
             type="button"
             name="button-one"
             className="calculator__keypad-row-button"
-            value="1"
-            onClick={addToCalculator(value)}
+            onClick={addToCalculator("1")}
           />
           <input
             type="button"
             name="button-two"
             className="calculator__keypad-row-button"
-            value="2"
-            onClick={addToCalculator(value)}
+            onClick={addToCalculator("2")}
           />
           <input
             type="button"
             name="button-three"
             className="calculator__keypad-row-button"
-            value="3"
-            onClick={addToCalculator(value)}
+            onClick={addToCalculator("3")}
           />
           <input
             type="button"
             name="button-multiply"
             className="calculator__keypad-row-button"
-            value="×"
-            onClick={addToCalculator(value)}
+            onClick={addToCalculator("×")}
           />
         </div>
         <div className="calculator__keypad-row">
@@ -169,22 +158,19 @@ const App = () => {
             type="button"
             name="button-zero"
             className="calculator__keypad-row-button"
-            value="0"
-            onClick={addToCalculator(value)}
+            onClick={addToCalculator("0")}
           />
           <input
             type="button"
             name="button-dot"
             className="calculator__keypad-row-button"
-            value="."
-            onClick={addToCalculator(value)}
+            onClick={addToCalculator(".")}
           />
           <input
             type="button"
             name="button-divide"
             className="calculator__keypad-row-button"
-            value="÷"
-            onClick={addToCalculator(value)}
+            onClick={addToCalculator("÷")}
           />
           <input
             type="button"
