@@ -8,6 +8,7 @@ function Suma({onClick }) {
               name="button-plus"
               className="calculator__keypad-row-button"
               onClick={() => onClick("+")}
+              value="+"
         />
     )
 }

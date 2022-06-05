@@ -8,6 +8,7 @@ function Division({ onClick }) {
             name="button-divide"
             className="calculator__keypad-row-button"
             onClick={() => onClick("/")}
+            value="/"
         />
     )
 }

@@ -13,26 +13,26 @@ import Division from './component/division';
 
 const App = () => {
 
-  var input = document.getElementById("display-result");
-
   const [resul, setResul] = useState("");
 
-  const AddToCalculator = (e) => {
-    setResul(resul.concat(e.target.value));
+  const AddToCalculator = (value) => {
+    console.log(value)
+    setResul(resul.concat(value));
   }
 
   function ClearCalculator() {
-    input.value = "";
-    input.focus();
+    let valorVar = "";
+    setResul(valorVar)
   }
 
   function ResultCalculator() {
+    console.log("igual",resul)
     let valorVar = eval(resul);
     setResul(valorVar)
   }
 
-  function AdvanceCalculator(funcName) {
-    let valorVar = Math[funcName](resul);
+  function AdvanceCalculator(value) {
+    let valorVar = Math[value](resul);
     setResul(valorVar)
   }
 
@@ -45,9 +45,9 @@ const App = () => {
         <div className="calculator__keypad">
           <div className="calculator__keypad-row">
             <Clear onClick={ClearCalculator}/>
-            <Round onClick={AdvanceCalculator}/>
-            <Raiz onClick={AdvanceCalculator}/>
-            <Absolute onClick={AdvanceCalculator}/>
+            <Round value="round" onClick={AdvanceCalculator}/>
+            <Raiz value="sqrt" onClick={AdvanceCalculator}/>
+            <Absolute value="abs" onClick={AdvanceCalculator}/>
           </div>
           <div className="calculator__keypad-row">
             <Number value='7' onClick={AddToCalculator}/>

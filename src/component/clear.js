@@ -9,6 +9,7 @@ function Clear({ onClick }) {
             name="button-clear"
             className="calculator__keypad-row-button primary-button"
             onClick={() => onClick('Clear')}
+            value="C"
         />
     )
 }

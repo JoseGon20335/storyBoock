@@ -8,6 +8,7 @@ function Resta({onClick }) {
               name="button-subtract"
               className="calculator__keypad-row-button"
               onClick={() => onClick("-")}
+              value="-"
         />
     )
 }

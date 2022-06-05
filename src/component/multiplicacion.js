@@ -8,6 +8,7 @@ function Multi({onClick }) {
             name="button-multiply"
             className="calculator__keypad-row-button"
             onClick={() => onClick("×")}
+            value="x"
         />
     )
 }

@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
 
-function Absolute({onClick }) {
+function Absolute({ onClick }) {
     return (
         <input
             type="button"

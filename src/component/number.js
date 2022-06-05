@@ -1,16 +1,15 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
 
-function Number({ x, onClick }) {
+function Number({ value, onClick }) {
     return (
         <input
             type="button"
-            name={x}
+            name={value}
             className="calculator__keypad-row-button"
-            onClick={() => onClick(x)}
-        >
-            {x}
-        </input>
+            onClick={() => onClick(value)}
+            value={value}
+        />
     )
 }
 
